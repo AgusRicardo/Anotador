@@ -1,0 +1,340 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #01c5c4;
+    font-family: 'Kufam';
+}
+.no-gutters {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+/* Colores */
+/* 
+#01c5c4
+#b8de6f
+#f1e189
+#f39233
+*/
+
+/* Nav */
+.nav-anotador {
+    background-color: #b8de6f !important;
+}
+.nav-anotador h2 {
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Icono Add */
+.icono-add {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.icono-add button {
+    display: inline;
+    width: 72px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 1px 3px 10px rgba(0,0,0,.50);
+}
+.icono-add img {
+    width: 45px;
+    padding: 5px;
+}
+.icono-add button:hover {
+    transform: scale(1.07,1.07)
+}
+.icono-add button:focus {
+    outline: none;
+}
+.titulo-nuevo-producto {
+    display: none;
+    color: black;
+    font-size: 25px;
+    margin: 5px;
+    padding: 3px;
+}
+/* Mensaje lista sin crear */
+.txt-list-vacia {
+    margin-top: 50px;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+}
+.txt-list-vacia h2 {
+    display: inline-block;
+}
+.txt-list-vacia img {
+    display: inline-block;
+    margin: 30px 0px 30px 0px;
+    width: 70px;
+}
+b {
+    font-style: italic;
+}
+/* List Add */
+.list-add {
+    display: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+#icon-select{
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+
+/* Mostrar */
+.mostrar-lista {
+    display: none;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.mostrar-lista ol {
+    padding: 0;
+    text-align: start;
+    cursor: pointer;
+}
+.mostrar-lista ol li:hover {
+    transform: scale(1.07,1.07);
+}
+.mostrar-lista ol li{
+    padding: 10px 20px 10px 10px;
+    background-color: white;
+    margin: 10px 5px 10px 5px;
+    border-radius: 50px;
+    box-shadow: 1px 3px 10px rgba(0,0,0,.50);
+    font-size: 25px;
+}
+.mostrar-lista ol li img {
+    margin: 0px 15px 0px 0px;
+    padding: 2px;
+}
+.mostrar-lista-icono {
+    width: 50px;
+}
+
+/* Mensaje lista creada */
+.lista-creada {
+    display: none;
+    margin-top: 50px;
+    text-align: center;
+}
+.lista-creada img {
+    margin: 20px;
+    width: 80px;
+}
+
+
+/* Mostrar detalles de la lista */
+.mostrar-detalles-lista{
+    display: none;
+    margin: 20px;
+    text-align: center;
+}
+.card-detalles {
+    margin-top: 25px;
+}
+.card-datos {
+    background-color: #f1e189;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#detalleIcono {
+    width: 100px;
+}
+#detalleTitulo {
+    background-color: #f39233;
+    border: none;
+    font-size: 22px;
+    padding: 8px 16px 8px 16px;
+    color: white;
+    margin: 0;
+}
+#detalleInfo {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Botones */
+#btn-lista {
+    border: none;
+    border-radius: 50px;
+    width: 220px;
+    margin: 15px;
+    padding: 8px;
+    font-size: 18px;
+    background-color: white;
+    box-shadow: 1px 3px 10px rgba(0,0,0,.50);
+}
+#btn-lista:hover {
+    transform: scale(1.07,1.07);
+}
+#btn-lista:focus {
+    outline: none;
+}
+.btn-add {
+    display: flex;
+    justify-content: flex-end;
+}
+#add {
+    width: 100px;
+    padding: 10px;
+    margin: 10px 0px 10px 10px;
+    background-color: #6FBB2E;
+    border: none;
+    box-shadow: 1px 3px 10px rgba(0,0,0,.50);
+    font-size: 18px;
+}
+#add:hover {
+    transform: scale(1.07,1.07);
+}
+.btn-back {
+    width: 75px;
+    padding: 10px;
+    margin: 10px 0px 10px 10px;
+    background-color: #EF5350;
+    border: none;
+    box-shadow: 1px 6px 10px rgba(0,0,0,.50);
+    font-size: 18px;
+}
+.btn-back:hover {
+    transform: scale(1.07,1.07);
+}
+#btn-back {
+    width: 75px;
+    padding: 10px;
+    margin: 10px 0px 10px 10px;
+    background-color: #EF5350;
+    border: none;
+    box-shadow: 1px 6px 10px rgba(0,0,0,.50);
+    font-size: 18px;
+}
+#btn-back:hover {
+    transform: scale(1.07,1.07);
+}
+/* Formularios lista */
+.form-lista {
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.tittle {
+    background-color: #f39233 !important;
+    border: none;
+    font-size: 20px;
+}
+.input-titulo {
+    display: inline-block;
+}
+.input-titulo input{
+    display: inline-block;
+    padding: 7px;
+}
+.form-lista li {
+    background-color: #f1e189;
+}
+.form-lista ul li label {
+    margin: 10px 0px 10px 10px;
+    font-size: 20px;
+}
+.form-lista ul li p{
+    margin: 10px;
+    font-size: 20px;
+}
+#icon-select option {
+    font-size: 18px;
+}
+span {
+    color: #EF5350;
+    font-size: 25px;
+}
+
+
+/* Footer */
+.desafio-summerhack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbd304;
+}
+.desafio-summerhack p {
+    display: inline-block;
+    margin: 0;
+    padding: 8px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #4581eb;
+    font-weight: 800;
+}
+.logo-summerhack {
+    width: 100px;
+}
+.titulo-summerhack {
+    width: 250px;
+}
+/* Media Querys */
+
+@media only screen and (min-width: 1024px) {
+    .desafio-summerhack {
+        display: none;
+    }
+    .icono-add button {
+        width: 350px;
+        height: 80px;
+        border-radius: 50px;
+    }
+    .titulo-nuevo-producto {
+        display: inline-block;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .txt-list-vacia h2{
+        font-size: 40px;
+    }
+    .txt-list-vacia h3 {
+        margin-top: 0px;
+        font-size: 30px;
+    }
+    .lista-creada {
+        margin-top: 42px;
+    }
+    .lista-creada h2 {
+    font-size: 30px;
+    }
+    .desafio-summerhack {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .icono-add {
+        justify-content: flex-end;
+    }
+    .icono-add button {
+        margin-right: 20px;
+    }
+    .list-add form ul li label{
+        font-size: 20px;
+    }
+    .list-add form ul li p {
+        font-size: 20px;
+    }
+    .tittle {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 325px) {
+    .titulo-summerhack {
+        width: 200px;
+    }
+}
