@@ -30,18 +30,19 @@ body {
 
 /* Icono Add */
 .icono-add {
-    display: flex;
-    justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 .icono-add button {
-    display: inline;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    display: block;
     width: 72px;
     height: 70px;
     border: none;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 20px;;
     box-shadow: 1px 3px 10px rgba(0,0,0,.50);
 }
 .icono-add img {
@@ -54,26 +55,18 @@ body {
 .icono-add button:focus {
     outline: none;
 }
-.titulo-nuevo-producto {
-    display: none;
-    color: black;
-    font-size: 25px;
-    margin: 5px;
-    padding: 3px;
-}
 /* Mensaje lista sin crear */
 .txt-list-vacia {
-    margin-top: 50px;
-    display: inline-block;
+    margin-top: 20px;
+    display: block;
     text-align: center;
     padding: 0;
 }
 .txt-list-vacia h2 {
-    display: inline-block;
+    display: block;
 }
 .txt-list-vacia img {
     display: inline-block;
-    margin: 30px 0px 30px 0px;
     width: 70px;
 }
 b {
@@ -82,14 +75,13 @@ b {
 /* List Add */
 .list-add {
     display: none;
-    margin-top: 50px;
     margin-bottom: 50px;
-    padding: 20px;
 }
 #icon-select{
     padding: 5px;
     border-radius: 4px;
     border: 1px solid #ced4da;
+    display: block;
 }
 
 /* Mostrar */
@@ -226,6 +218,9 @@ b {
     transform: scale(1.07,1.07);
 }
 /* Formularios lista */
+#modal-nueva-lista {
+    display: block;
+}
 .form-lista {
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
 }
@@ -235,21 +230,19 @@ b {
     font-size: 20px;
 }
 .input-titulo {
-    display: inline-block;
+    display: block;
 }
 .input-titulo input{
-    display: inline-block;
-    padding: 7px;
+    display: block;
 }
 .form-lista li {
     background-color: #f1e189;
 }
 .form-lista ul li label {
-    margin: 10px 0px 10px 10px;
+    display: block;
     font-size: 20px;
 }
 .form-lista ul li p{
-    margin: 10px;
     font-size: 20px;
 }
 #icon-select option {
@@ -286,19 +279,15 @@ span {
 /* Media Querys */
 
 @media only screen and (min-width: 1024px) {
-    .desafio-summerhack {
-        display: none;
-    }
-    .icono-add button {
-        width: 350px;
-        height: 80px;
-        border-radius: 50px;
-    }
-    .titulo-nuevo-producto {
-        display: inline-block;
+    .list-add {
+        margin-top: 50px;
     }
 }
 @media only screen and (max-width: 1024px) {
+    #modal-nueva-lista {
+        display: none;
+        margin-top: 65px;
+    }
     .txt-list-vacia h2{
         font-size: 40px;
     }
@@ -313,15 +302,12 @@ span {
     font-size: 30px;
     }
     .desafio-summerhack {
-        margin-top: 20px;
+        display: none;
     }
 }
 @media only screen and (max-width: 425px) {
     .icono-add {
         justify-content: flex-end;
-    }
-    .icono-add button {
-        margin-right: 20px;
     }
     .list-add form ul li label{
         font-size: 20px;
@@ -332,6 +318,11 @@ span {
     .tittle {
         font-size: 22px;
     }
+    .txt-list-vacia {
+        height: 56vh;
+        margin-top: 75px;
+    }
+
 }
 @media only screen and (max-width: 325px) {
     .titulo-summerhack {
